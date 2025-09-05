@@ -18,6 +18,8 @@ export type AlertOptions = {
   fields: FieldProps[];
 };
 
-export declare function AlertBox(): JSX.Element;
+export declare class AlertBox extends React.Component {
+  fire: (options: AlertOptions) => void
+}
 
 export declare function fire(options: AlertOptions): void;
